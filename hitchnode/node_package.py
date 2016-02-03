@@ -44,7 +44,7 @@ class NodePackage(HitchPackage):
 
     name = "Node"
 
-    def __init__(self, version="5.4.0", directory=None, bin_directory=None):
+    def __init__(self, version="5.5.0", directory=None, bin_directory=None):
         super(NodePackage, self).__init__()
         self.version = self.check_version(version, self.VERSIONS, ISSUES_URL)
 
