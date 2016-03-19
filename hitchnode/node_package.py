@@ -39,7 +39,7 @@ class NodePackage(HitchPackage):
         "0.9.0", "0.9.1", "0.9.10", "0.9.11", "0.9.12", "0.9.2", "0.9.3", "0.9.4", "0.9.5", "0.9.6", "0.9.7", "0.9.8", "0.9.9",
         "4.0.0", "4.1.0", "4.1.1", "4.1.2", "4.2.0", "4.2.1", "4.2.2", "4.2.3", "4.2.4", "4.2.5", "4.2.6",
         "5.0.0", "5.1.0", "5.1.1",
-        "5.2.0", "5.3.0", "5.4.0", "5.4.1", "5.5.0", "5.6.0", "5.7.0", "5.7.1", "5.8.0",
+        "5.2.0", "5.3.0", "5.4.0", "5.4.1", "5.5.0", "5.6.0", "5.7.0", "5.7.1", "5.8.0", "5.9.0",
     ]
 
     name = "Node"
@@ -48,9 +48,7 @@ class NodePackage(HitchPackage):
         super(NodePackage, self).__init__()
         self.version = self.check_version(version, self.VERSIONS, ISSUES_URL)
 
-    
         if directory is None:
-            
             if sys.platform == "darwin":
                 self.download_url = "https://nodejs.org/dist/v{0}/node-v{0}-darwin-x64.tar.gz".format(self.version)
                 self.subdirectory = "node-v{0}-darwin-x64".format(self.version)
