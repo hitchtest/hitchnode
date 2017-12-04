@@ -43,6 +43,7 @@ class NodePackage(HitchPackage):
         "6.11.0",
         "7.10.0",
         "8.1.2",
+        "9.2.0",
     ]
 
     name = "Node"
